@@ -116,10 +116,12 @@
 	color: white !important;
 	opacity: .7;
 	transition: 400ms all ease-in-out;
+	border-bottom: 2px dotted white;
 }
 
 .bar-merger a:hover {
 	opacity: 1;
+	text-decoration: none;
 }
 
 .bar-merger .bar-buttons {
