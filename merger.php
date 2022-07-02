@@ -78,12 +78,12 @@ function gowest_association_bar() {
 	?>
 	<div class="bar-merger">
 		<div class="bar-content">
-			Welcome to GoWest Credit Union Association.
+			Welcome to GoWest Credit Union Association! <a href="https://gowestassociation.org">Learn more about us here.</a>
 		</div>
 		<div class="bar-buttons">
 			<a href="https://gowestassociation.org" class="bar-button">Learn More</a>
-			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'mwcua' ) ) { ?><a href="https://nwcua.org" class="bar-button blue">NWCUA</a><?php } ?>
-			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'nwcu' ) ) { ?><a href="https://mwcua.com" class="bar-button blue">MWCUA</a><?php } ?>
+			<?php if ( !stristr( $_SERVER['HTTP_HOST'], 'nwcu' ) ) { ?><a href="https://nwcua.org" class="bar-button blue">Visit NWCUA</a><?php } ?>
+			<?php if ( !stristr( $_SERVER['HTTP_HOST'], 'mwcua' ) ) { ?><a href="https://mwcua.com" class="bar-button blue">Visit MWCUA</a><?php } ?>
 		</div>
 	</div>
 	<?php
@@ -92,8 +92,8 @@ function gowest_association_bar() {
 
 // include the main.js script in the header on the front-end.
 function merger_assets() {
-	wp_enqueue_style( 'merger-css', plugin_dir_url( __FILE__ ) . 'merger.css?v=6' );
-	wp_enqueue_script( 'merger-js', plugin_dir_url( __FILE__ ) . 'merger.js?v=6', array( 'jquery' ), false, true );
+	wp_enqueue_style( 'merger-css', plugin_dir_url( __FILE__ ) . 'merger.css?v=7' );
+	wp_enqueue_script( 'merger-js', plugin_dir_url( __FILE__ ) . 'merger.js?v=7', array( 'jquery' ), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'merger_assets' );
 

@@ -112,6 +112,16 @@
 	color: white;
 }
 
+.bar-merger a {
+	color: white;
+	opacity: .7;
+	transition: 400ms all ease-in-out;
+}
+
+.bar-merger a:hover {
+	opacity: 1;
+}
+
 .bar-merger .bar-buttons {
 	padding: 9px 0;
 }
@@ -123,6 +133,11 @@
 	border-radius: 5px;
 	margin: -8px 0 0 0;
 	text-decoration: none;
+	opacity: 1;
+}
+
+.bar-merger .bar-button:hover {
+	opacity: .8;
 }
 
 .bar-merger .bar-button.blue {
