@@ -9,10 +9,11 @@
 
 .mfp-content .lightbox-merger {
 	display: block;
-	width: 550px;
+	max-width: 550px;
 	color: white;
 	padding: 30px 40px;
 	margin: 0 auto;
+	overflow: auto;
 }
 
 .lightbox-merger h4 {
