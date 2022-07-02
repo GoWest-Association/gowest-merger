@@ -49,7 +49,12 @@ function gowest_association_lightbox() {
 function gowest_foundation_bar() {
 	?>
 	<div class="bar-merger">
-		<a href="https://gowestassociation.org" class="bar-button">Learn More</a> Introducing GoWest Foundation — Helping credit unions harness and deliver resources to improve financial lives.
+		<div class="bar-content">
+			Introducing GoWest Foundation — Helping credit unions harness and deliver resources to improve financial lives.
+		</div>
+		<div class="bar-buttons">
+			<a href="https://gowestassociation.org" class="bar-button">Learn More</a>
+		</div>
 	</div>
 	<?php
 }
@@ -58,7 +63,12 @@ function gowest_foundation_bar() {
 function gowest_solutions_bar() {
 	?>
 	<div class="bar-merger">
-		<a href="https://gowestassociation.org" class="bar-button">Learn More</a> Introducing GoWest Solutions — offering leading business solutions to help credit unions thrive and better serve members.
+		<div class="bar-content">
+			Introducing GoWest Solutions — offering leading business solutions to help credit unions thrive and better serve members.
+		</div>
+		<div class="bar-buttons">
+			<a href="https://gowestassociation.org" class="bar-button">Learn More</a>
+		</div>
 	</div>
 	<?php
 }
@@ -67,7 +77,14 @@ function gowest_solutions_bar() {
 function gowest_association_bar() {
 	?>
 	<div class="bar-merger">
-		<a href="https://gowestassociation.org" class="bar-button">Learn More</a> Introducing GoWest Credit Union Association! A new six-state organization that champions credits unions of the west.
+		<div class="bar-content">
+			Welcome to GoWest Credit Union Association.
+		</div>
+		<div class="bar-buttons">
+			<a href="https://gowestassociation.org" class="bar-button">Learn More</a>
+			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'mwcua' ) ) { ?><a href="https://nwcua.org" class="bar-button blue">NWCUA</a><?php } ?>
+			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'nwcu' ) ) { ?><a href="https://mwcua.com" class="bar-button blue">MWCUA</a><?php } ?>
+		</div>
 	</div>
 	<?php
 }

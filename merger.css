@@ -103,13 +103,45 @@
 	color: white;
 }
 
+.bar-merger .bar-buttons {
+	padding: 9px 0;
+}
+
 .bar-merger .bar-button {
-	float: right;
 	background: #00AE80;
 	color: white;
 	padding: 9px 14px;
 	border-radius: 5px;
 	margin: -8px 0 0 0;
+}
+
+.bar-merger .bar-button.blue {
+	background-color: #6EFFEB;
+	color: #1E3241;
+}
+
+.bar-merger .bar-content {
+	padding: 0 0 10px 0;
+	line-height: 1.4em;
+}
+
+
+@media only screen and  (min-width: 768px ) {
+	.bar-merger {
+		display: flex;
+	}
+
+	.bar-merger .bar-content {
+		flex: 1 1 auto;
+		padding: 0;
+	}
+
+	.bar-merger .bar-buttons {
+		text-align: right;
+		flex: 1 1 auto;
+		padding: 3px 0 0;
+		white-space: nowrap;
+	}
 }
 
 .bar-merger.foundation {
