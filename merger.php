@@ -92,8 +92,8 @@ function gowest_association_bar() {
 
 // include the main.js script in the header on the front-end.
 function merger_assets() {
-	wp_enqueue_style( 'merger-css', plugin_dir_url( __FILE__ ) . 'merger.css?v=3' );
-	wp_enqueue_script( 'merger-js', plugin_dir_url( __FILE__ ) . 'merger.js?v=3', array( 'jquery' ), false, true );
+	wp_enqueue_style( 'merger-css', plugin_dir_url( __FILE__ ) . 'merger.css?v=4' );
+	wp_enqueue_script( 'merger-js', plugin_dir_url( __FILE__ ) . 'merger.js?v=4', array( 'jquery' ), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'merger_assets' );
 
