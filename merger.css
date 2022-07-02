@@ -112,8 +112,8 @@
 	color: white;
 }
 
-.bar-merger a {
-	color: white;
+.bar-merger a, .bar-merger a:visited {
+	color: white !important;
 	opacity: .7;
 	transition: 400ms all ease-in-out;
 }
