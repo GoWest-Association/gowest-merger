@@ -50,10 +50,11 @@ function gowest_foundation_bar() {
 	?>
 	<div class="bar-merger">
 		<div class="bar-content">
-			Introducing GoWest Foundation — Helping credit unions harness and deliver resources to improve financial lives.
+			Welcome to GoWest Foundation! <a href="https://gowestassociation.org">Learn more about us here.</a>
 		</div>
 		<div class="bar-buttons">
-			<a href="https://gowestassociation.org" class="bar-button">Learn More</a>
+			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'nwcu' ) ) { ?><a href="https://mwcua.com/foundation" class="bar-button blue">Visit MWCUF</a><?php } ?>
+			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'mwcua' ) ) { ?><a href="https://nwcuf.org" class="bar-button blue">Visit NWCUF</a><?php } ?>
 		</div>
 	</div>
 	<?php
@@ -64,10 +65,11 @@ function gowest_solutions_bar() {
 	?>
 	<div class="bar-merger">
 		<div class="bar-content">
-			Introducing GoWest Solutions — offering leading business solutions to help credit unions thrive and better serve members.
+			Welcome to GoWest Solutions! <a href="https://gowestassociation.org">Learn more about us here.</a>
 		</div>
 		<div class="bar-buttons">
-			<a href="https://gowestassociation.org" class="bar-button">Learn More</a>
+			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'nwcu' ) ) { ?><a href="https://mwcua.com/solutions" class="bar-button blue">Visit Strategic Partners</a><?php } ?>
+			<?php if ( stristr( $_SERVER['HTTP_HOST'], 'mwcua' ) ) { ?><a href="https://nwcua.org/solutions" class="bar-button blue">Visit Strategic Link</a><?php } ?>
 		</div>
 	</div>
 	<?php
