@@ -80,12 +80,7 @@ function gowest_association_bar() {
 	?>
 	<div class="bar-merger">
 		<div class="bar-content">
-			Welcome to GoWest Credit Union Association! <a href="https://gowestassociation.org">Learn more about us here.</a>
-		</div>
-		<div class="bar-buttons">
-			<!-- <a href="https://gowestassociation.org" class="bar-button">Learn More</a> -->
-			<?php if ( !stristr( $_SERVER['HTTP_HOST'], 'nwcu' ) ) { ?><a href="https://nwcua.org" class="bar-button blue">Visit NWCUA</a><?php } ?>
-			<?php if ( !stristr( $_SERVER['HTTP_HOST'], 'mwcua' ) ) { ?><a href="https://mwcua.com" class="bar-button blue">Visit MWCUA</a><?php } ?>
+			Scheduled website maintenance on Jan. 21 through Jan. 22 may cause limited access to the website.
 		</div>
 	</div>
 	<?php
