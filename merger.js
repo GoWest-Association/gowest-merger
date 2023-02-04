@@ -24,13 +24,11 @@ var jaaulde=window.jaaulde||{};jaaulde.utils=jaaulde.utils||{};jaaulde.utils.coo
 {$this.html(value);}}break;}}});},cookieBind:function(options){return this.each(function(){var $this=$(this);$this.cookieFill().change(function(){$this.cookify(options);});});}};$.each(extensions,function(i){$.fn[i]=this;});})(window.jQuery);}})();
 
 
-
-
 // onload notice bar functionality.
 jQuery(document).ready(function($){
 
     if ( $( '.lightbox-merger' ).length > 0 ) {
-        if ( $.cookies.get( 'lightbox-merger-closed' ) == null ) {
+        if ( $.cookies.get( 'Z95zSQcizhy2fiqQwgo7' ) == null ) {
             $.magnificPopup.open({
                 items: {
                     src: '.lightbox-merger'
@@ -38,7 +36,7 @@ jQuery(document).ready(function($){
                 type: 'inline',
                 callbacks: {
                     close: function(){
-                        $.cookies.set( 'lightbox-merger-closed', 'true' );
+                        $.cookies.set( 'Z95zSQcizhy2fiqQwgo7', 'true' );
                     }
                 }
             });
@@ -46,5 +44,4 @@ jQuery(document).ready(function($){
     }
 
 });
-
 

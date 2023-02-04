@@ -9,9 +9,9 @@
 
 .mfp-content .lightbox-merger {
 	display: block;
-	max-width: 550px;
+	max-width: 700px;
 	color: white;
-	padding: 30px 40px;
+	padding: 30px 30px;
 	margin: 0 auto;
 	overflow: auto;
 }
@@ -26,7 +26,7 @@
 .lightbox-merger p {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .lightbox-merger .lightbox-button {
