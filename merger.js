@@ -28,7 +28,9 @@ var jaaulde=window.jaaulde||{};jaaulde.utils=jaaulde.utils||{};jaaulde.utils.coo
 jQuery(document).ready(function($){
 
     if ( $( '.lightbox-merger' ).length > 0 ) {
-        if ( $.cookies.get( 'Z95zSQcizhy2fiqQwgo7' ) == null ) {
+        var cookie_name = '5LGKAvWZVE9w9FpBAMps';
+
+        if ( $.cookies.get( cookie_name ) == null ) {
             $.magnificPopup.open({
                 items: {
                     src: '.lightbox-merger'
@@ -36,7 +38,7 @@ jQuery(document).ready(function($){
                 type: 'inline',
                 callbacks: {
                     close: function(){
-                        $.cookies.set( 'Z95zSQcizhy2fiqQwgo7', 'true' );
+                        $.cookies.set( cookie_name, 'true' );
                     }
                 }
             });
